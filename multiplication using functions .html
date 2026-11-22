@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Using Functions</title>
+</head>
+
+<body>
+
+    <h1>Multiplication Using Functions</h1>
+    <p>Let's multiply two numbers!</p>
+
+    <button onclick="multiply(8)">Click Me!</button>
+
+    <p id="result"></p>
+
+    <script>
+        function multiply(a, b) {
+            if (b === undefined) {
+                b = 4;
+            }
+
+            var result = a * b;
+
+            document.getElementById("result").innerHTML = "The multiplication result is: " + result;
+        }
+    </script>
+
+</body>
+
+</html>
